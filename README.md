@@ -1,5 +1,6 @@
 # QA Testing Portfolio
 
+### Mannual Testing
 ### Project 1: Amazon Clone Flutter App 
 
 #### Project Overview
@@ -66,4 +67,47 @@ The goal is to verify functionality, identify defects, and ensure proper validat
 
 ---
 
+### API Testing
+### Project 1: Amazon Clone Flutter App 
 
+#### Project Overview
+This project involves API testing of the Signup functionality of the Amazon Clone application using Postman.  
+The goal is to validate request/response behavior, status codes, and backend validations.
+
+---
+
+## Testing Scope
+- Request & Response Validation  
+- Status Code Verification  
+- Input Validation  
+- Error Handling  
+- Edge Case Testing  
+
+---
+
+## Bugs Identified
+
+- Incorrect status code returned (500 instead of 400) for validation errors  
+- Invalid email formats returning incorrect status codes  
+- Duplicate user registration returns wrong status code (400 instead of 409)  
+- Password with spaces accepted without validation  
+- Special characters in name are not validated  
+- Empty JSON request returns server error (500) instead of validation error  
+
+---
+
+## Test Summary
+
+- Total Test Cases: 15  
+- Passed: 6  
+- Failed: 9  
+
+---
+
+## Tools Used
+- Postman (API Testing)  
+- JSON  
+- MS Excel (Test Cases)  
+- MS Word (Bug Reports)  
+
+---
