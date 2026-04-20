@@ -71,19 +71,14 @@ The goal is to verify functionality, identify defects, and ensure proper validat
 ### Project 1: Amazon Clone Flutter App 
 
 #### Project Overview
-This project involves API testing of the Signup functionality of the Amazon Clone application using Postman.  
+This project involves API testing of the Signup,Login functionality of the Amazon Clone application using Postman.  
 The goal is to validate request/response behavior, status codes, and backend validations.
 
 ---
 
-## Testing Scope
-- Request & Response Validation  
-- Status Code Verification  
-- Input Validation  
-- Error Handling  
-- Edge Case Testing  
+## Modules Covered
 
----
+## Sign Up
 
 ## Bugs Identified
 
@@ -99,8 +94,39 @@ The goal is to validate request/response behavior, status codes, and backend val
 ## Test Summary
 
 - Total Test Cases: 15  
-- Passed: 6  
-- Failed: 9  
+- Passed: 6
+- Failed: 9
+
+---
+
+## Login
+
+## Bugs Identified
+
+- Incorrect error message displayed when email field is missing  
+- Incorrect status code (500 instead of 400) when password field is missing  
+- Invalid email format returns incorrect error message  
+- Unregistered email returns incorrect status code (400 instead of 401/404)  
+- Empty JSON request returns incorrect error message  
+- Uppercase email not handled correctly during login  
+- API accepts extra fields and logs in user successfully without validation  
+
+---
+
+## Test Summary
+
+- Total Test Cases: 11 
+- Passed: 4
+- Failed: 7
+
+---
+
+## Testing Scope
+- Request & Response Validation  
+- Status Code Verification  
+- Input Validation  
+- Error Handling  
+- Edge Case Testing  
 
 ---
 
